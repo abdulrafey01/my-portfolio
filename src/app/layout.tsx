@@ -11,6 +11,11 @@ const lufgaFont = localFont({
       style: "normal",
     },
     {
+      path: "../../public/fonts/Lufga/LufgaMedium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
       path: "../../public/fonts/Lufga/LufgaBold.ttf",
       weight: "700",
       style: "normal",
