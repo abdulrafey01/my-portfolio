@@ -40,7 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lufgaFont.className} antialiased`}>{children}</body>
+      <body
+        className={`${lufgaFont.className} antialiased flex justify-center  bg-red-500`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

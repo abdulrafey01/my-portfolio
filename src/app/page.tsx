@@ -6,7 +6,7 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div className="flex flex-col  items-center min-h-screen bg-red-200">
+    <div className=" flex flex-col justify-start items-center min-h-screen w-full max-w-[2000px] bg-red-200">
       <NavBar />
       <LandingSection />
     </div>
