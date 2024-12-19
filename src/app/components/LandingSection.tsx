@@ -1,13 +1,17 @@
+"use client";
 import React from "react";
 import { Urbanist } from "next/font/google";
 import Vector1 from "./Svgs/Vector1";
 import Vector2 from "./Svgs/Vector2";
 import Ellipse from "./Svgs/Ellipse";
-import MyPic from "@/app/assets/MyPic.png";
+import MyPic from "@/app/assets/MyPic5.png";
 import Image from "next/image";
 import QuotesUp from "./Svgs/QuotesUp";
 import Stars from "./Svgs/Stars";
 import LinkArrow from "./Svgs/LinkArrow";
+import { motion } from "motion/react";
+import BgPattern from "./Svgs/BgPattern";
+
 type Props = {};
 
 const urbanist = Urbanist({ subsets: ["latin"] });
@@ -37,13 +41,16 @@ const LandingSection = (props: Props) => {
           <p>MERN Stack Developer</p>
           <Vector2 className="w-14 h-14 absolute -left-10 -bottom-9" />
         </div>
-        <div className="relative">
+        <div className="relative bg-red-500">
           <Ellipse className="w-auto h-[18rem] mt-20" />
-          <Image
+          {/* <Image
             src={MyPic}
-            className=" h-[28rem] w-auto  absolute bottom-0 -left-6"
+            className="w-[36rem] absolute bottom-0 -left-6 z-10"
             alt="My Profile Picture"
-          />
+          /> */}
+
+          <BgPattern className="absolute top-[-22rem] right-[-2rem] w-[43rem]" />
+
           <div className="absolute z-10 backdrop-blur-sm  text-white bottom-0 left-36 p-1 border-b-[1px] border-l-[1px] border-t-[1px] border-t-gray-300   border-white rounded-full flex  justify-center items-center">
             <div className="bg-primary py-2 px-6 rounded-full flex justify-center items-center gap-1">
               <p>Portfolio</p>
