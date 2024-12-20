@@ -3,13 +3,21 @@ import { motion } from "motion/react";
 
 type Props = {
   className: string;
+  isPatternHovered: boolean;
+  setIsPatternHovered: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const BgPattern = ({ className }: Props) => {
+const BgPattern = ({
+  className,
+  isPatternHovered,
+  setIsPatternHovered,
+}: Props) => {
   return (
     <motion.svg
-      initial={{ opacity: 0, scale: 0.2 }}
-      whileHover={{ opacity: 1, scale: 1 }}
+      animate={{
+        opacity: isPatternHovered ? 1 : 0,
+        scale: isPatternHovered ? 1 : 0.2,
+      }}
       className={className}
       width="1066"
       height="1365"
