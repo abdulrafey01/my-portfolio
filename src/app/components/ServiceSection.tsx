@@ -1,11 +1,15 @@
 import React from "react";
 import Service from "./Service";
+import ServiceBg from "../assets/ServiceBackground.png";
 type Props = {};
 
 const ServiceSection = (props: Props) => {
   return (
     // z-10 to make it on top of bgPattern
-    <div className=" bg-[url('@/app/assets/ServiceBackground.png')] text-white z-10 w-full rounded-2xl py-4 px-[4rem] ">
+    <div
+      style={{ backgroundImage: `url(${ServiceBg.src})` }}
+      className={` text-white z-10 w-full rounded-2xl py-4 px-[4rem]`}
+    >
       {/* First container */}
       <div className="flex justify-between items-center ">
         <p className="text-3xl">
