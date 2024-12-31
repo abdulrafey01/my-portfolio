@@ -25,7 +25,7 @@ const LandingSection = (props: Props) => {
         animate={{ y: isPatternHovered ? -150 : 0 }}
         className="w-80 flex flex-col gap-2 items-start bg-primary"
       >
-        <QuotesUp />
+        <QuotesUp className="w-9 h-9 fill-[#344054]" />
         <p className="text-left">
           Jenny's Exceptional product design ensure our website's success.
           Highly Recommended
@@ -40,7 +40,7 @@ const LandingSection = (props: Props) => {
           }}
           className="relative mt-10 py-2 px-6 border-2 border-black rounded-full"
         >
-          <Vector1 className="w-6 h-6 absolute -right-4 -top-5" />
+          <Vector1 className="w-6 h-6 absolute -right-4 -top-5 stroke-primary" />
           <p>Hello!</p>
         </motion.div>
         <motion.div
@@ -48,7 +48,7 @@ const LandingSection = (props: Props) => {
             y: isPatternHovered ? 150 : 0,
             scale: isPatternHovered ? 0.5 : 1,
           }}
-          className={`relative flex flex-col gap-2 justify-center items-center text-6xl font-medium  ${urbanist.className}`}
+          className={`relative flex flex-col gap-2 justify-center items-center text-6xl font-[600]  ${urbanist.className}`}
         >
           <p>
             I'm <span className="text-primary">Abdul Rafey,</span>
@@ -62,11 +62,11 @@ const LandingSection = (props: Props) => {
           className="relative bg-red-500"
         >
           <Ellipse className="w-auto h-[18rem] mt-20" />
-          <Image
+          {/* <Image
             src={MyPic}
             className="w-[36rem] absolute bottom-0 -left-6 z-10"
             alt="My Profile Picture"
-          />
+          /> */}
 
           <BgPattern
             isPatternHovered={isPatternHovered}
@@ -74,7 +74,7 @@ const LandingSection = (props: Props) => {
             className="absolute top-[-22rem] right-[-2rem] w-[43rem]"
           />
 
-          <div className="absolute z-10 backdrop-blur-sm  text-white bottom-0 left-36 p-1 border-b-[1px] border-l-[1px] border-t-[1px] border-t-gray-300   border-white rounded-full flex  justify-center items-center">
+          <div className="absolute z-10 backdrop-blur-sm  text-white bottom-8 left-36 p-1 border-b-[1px] border-l-[1px] border-t-[1px] border-t-gray-300   border-white rounded-full flex  justify-center items-center">
             <motion.div
               initial={{ width: "6rem" }}
               animate={{

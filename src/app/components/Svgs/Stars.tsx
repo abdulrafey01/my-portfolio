@@ -1,10 +1,13 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Stars = (props: Props) => {
+const Stars = ({ className }: Props) => {
   return (
     <svg
+      className={className}
       width="160"
       height="32"
       viewBox="0 0 160 32"
