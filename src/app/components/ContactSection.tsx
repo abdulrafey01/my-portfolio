@@ -8,7 +8,7 @@ type Props = {};
 
 const ContactSection = (props: Props) => {
   return (
-    <div className="flex w-full pt-14 justify-center items-center bg-blue-400">
+    <div className="flex w-full pt-14 justify-center items-center ">
       <div className=" flex flex-col justify-center items-center gap-2">
         {/* Texts */}
         <p className="text-5xl font-bold mb-2 text-secondary">
@@ -18,7 +18,7 @@ const ContactSection = (props: Props) => {
           Idea? <span className="text-primary">Let's Discuss</span>
         </p>
         {/* Input */}
-        <div className="w-[43rem] flex justify-between items-center bg-red-700 rounded-full p-2">
+        <div className="w-[43rem] flex justify-between items-center border-gray-300 border-[1px] rounded-full p-2">
           {/* First container:Icon and Input */}
           <div className="w-full  flex justify-start items-center gap-4">
             <div className="w-[2.8rem] h-10 bg-[#FFEAD5] rounded-full flex justify-center items-center">

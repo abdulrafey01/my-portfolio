@@ -62,11 +62,11 @@ const LandingSection = (props: Props) => {
           className="relative bg-red-500"
         >
           <Ellipse className="w-auto h-[18rem] mt-20" />
-          {/* <Image
+          <Image
             src={MyPic}
             className="w-[36rem] absolute bottom-0 -left-6 z-10"
             alt="My Profile Picture"
-          /> */}
+          />
 
           <BgPattern
             isPatternHovered={isPatternHovered}

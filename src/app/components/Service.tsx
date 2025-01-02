@@ -42,10 +42,13 @@ const Service = ({ title, img }: Props) => {
         animate={{
           overflow: containerOverflowHidden ? "hidden" : "visible",
         }}
-        className="relative w-full border-transparent  rounded-b-2xl"
+        className="relative w-full border-none  rounded-b-2xl"
       >
-        <motion.div animate={{ scale: isHovered ? 1.1 : 1 }}>
-          <Image className="mt-10" src={img} alt="" />
+        <motion.div
+          className="border-none"
+          animate={{ scale: isHovered ? 1.1 : 1 }}
+        >
+          <Image className="mt-10 border-none" src={img} alt="" />
         </motion.div>
         <div
           style={{

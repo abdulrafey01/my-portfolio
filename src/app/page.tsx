@@ -7,6 +7,9 @@ import HireMeSection from "./components/HireMeSection";
 import PortfolioSection from "./components/PortfolioSection";
 import TestimonialSection from "./components/TestimonialSection";
 import ContactSection from "./components/ContactSection";
+import Ticker from "./components/Ticker";
+import PostsSection from "./components/PostsSection";
+import Footer from "./components/Footer";
 
 type Props = {};
 
@@ -21,6 +24,9 @@ const page = (props: Props) => {
       <PortfolioSection />
       <TestimonialSection />
       <ContactSection />
+      <Ticker />
+      <PostsSection />
+      <Footer />
     </div>
   );
 };
